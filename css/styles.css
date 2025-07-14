@@ -16,8 +16,8 @@ h2 ,h1{
     padding: 20px;
     background-color: #fff;
     display: grid;
-    grid-template-columns: repeat(3 , 1fr);
-    /* grid-template-columns: 100px 1fr 3fr; */
+    /* grid-template-columns: repeat(3 , 1fr); */
+    grid-template-columns: 100px 1fr 2fr;
     grid-template-rows: 250px 100px;
     gap: 20px;
 }
@@ -64,4 +64,35 @@ h2 ,h1{
 .footer{
     grid-area: footer; background-color: red;
     padding: 20px;
+}
+
+.grid-container3{
+    display: grid;
+    /* grid-template-columns: repeat(3 , 1fr); */
+    grid-template-rows: repeat(3 , 150px);
+
+}
+.grid-container3 > div{
+    background-color: lightcoral;
+        color: black;
+        font-size: 20px;
+        /* height: 100px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        padding: 20px;
+}
+
+.grid-container3 .item-1{
+    grid-column: span 2;
+}
+
+.grid-container3 .item-7{
+    grid-column: span 2;
+   
+}
+
+.grid-container3 .item-8{
+    grid-column: span 3;
 }
