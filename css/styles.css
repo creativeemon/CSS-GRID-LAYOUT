@@ -96,3 +96,21 @@ h2 ,h1{
 .grid-container3 .item-8{
     grid-column: span 3;
 }
+
+.grid-container4{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 20px;
+    /* justify-items: center;
+    align-items: center; */
+    /* place-items: center; */
+    grid-auto-flow: column;
+    background-color: white;
+    height: 450px;
+}
+
+.grid-container4 > div{
+    padding: 20px;
+    border: 1px solid royalblue;
+  
+}
